@@ -1,0 +1,103 @@
+.register-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 450px;
+  background: linear-gradient(48deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 29%, rgba(0, 212, 255, 1) 100%);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+  animation: popup3D 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+
+
+
+
+
+}
+.register-wrapper {
+   position: fixed;
+   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* логотип сверху */
+  align-items: center;
+  padding-top: 20px; /* небольшой отступ сверху */
+}
+.register-form {
+  width: 100%;                 
+  display: flex;
+  flex-direction: column;     
+  align-items: center;         
+  gap: 15px;
+}
+
+.register-form input {
+  width: 90%;                 
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.register-form button {
+  width: 50%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff33;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+ margin-top: 20px;
+  transition: transform 0.2s ease, background-color 0.15s ease;
+}
+
+/* ✅ Анимация нажатия */
+.register-form button:active {
+  transform: scale(0.92); /* лёгкое уменьшение */
+  background-color: #ffffff66;
+}
+
+
+.register-form button:hover {
+  background-color: #ffffff55;
+}
+
+
+
+@keyframes popup3D {
+  0% {
+    transform: translate(-50%, -50%) perspective(800px) rotateX(-60deg) scale(0.7);
+    opacity: 0;
+  }
+  
+
+  100% {
+    transform: translate(-50%, -50%) perspective(800px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.input-error {
+  background-color: #d3d3d3; /* серый фон */
+  color: #555;
+}
+
+
+
+
+
+
